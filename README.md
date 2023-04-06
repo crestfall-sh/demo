@@ -49,3 +49,7 @@ sudo docker compose up --build --force-recreate --detach
 # Cleanup
 sudo rm -rf ./docker/volumes/
 ```
+
+#### License
+
+MIT
