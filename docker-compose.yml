@@ -114,7 +114,7 @@ services:
     depends_on:
       - demo
     extra_hosts:
-    - "host.docker.internal:host-gateway"
+      - "host.docker.internal:host-gateway"
     networks:
       - crestfall-network
 
