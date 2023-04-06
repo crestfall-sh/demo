@@ -28,7 +28,7 @@ cat ~/.ssh/id_rsa.pub
 #### Clone the repository
 
 ```sh
-git clone git@github.com:joshxyzhimself/playground.git
+git clone git@github.com:crestfall-sh/demo.git
 ```
 
 #### Running with Docker Compose
