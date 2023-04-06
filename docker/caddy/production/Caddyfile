@@ -11,10 +11,10 @@ demo.crestfall.sh {
   }
   handle /authn/* {
     uri strip_prefix /authn
-    reverse_proxy authn:8080
+    reverse_proxy host.docker.internal:8080
   }
   handle {
-    reverse_proxy demo:9090
+    reverse_proxy host.docker.internal:9090
   }
   tls joshxyzhimself@gmail.com {
     protocols tls1.3

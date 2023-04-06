@@ -33,7 +33,7 @@ web.serve({
     },
   ],
   exclude: ['/api/'],
-  debug: true,
+  debug: false,
 });
 
 export const app_token = await web.http(app, web.port_access_types.EXCLUSIVE, 9090);
