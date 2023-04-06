@@ -1,5 +1,11 @@
 # demo
 
+#### Switch to root
+
+```sh
+sudo passwd root
+su -
+```
 
 #### Install Docker using the convenience script🔗
 
