@@ -1,0 +1,18 @@
+{
+  debug
+  auto_https off
+  log {
+    format console
+  }
+}
+
+# note: exclude trailing slash; correct: http://localhost; incorrect: http://localhost/
+http://localhost, http://0.0.0.0 {
+  handle /authn/* {
+    uri strip_prefix /authn
+    reverse_proxy host.docker.internal:8080
+  }
+  handle {
+    reverse_proxy host.docker.internal:9090
+  }
+}

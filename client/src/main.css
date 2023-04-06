@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply w-full p-1;
+  @apply bg-slate-50;
+  @apply border border-slate-200;
+}
+input:focus {
+  @apply bg-white;
+}
+button[type] {
+  @apply w-full p-1;
+  @apply bg-slate-900 text-white;
+  @apply text-center text-base font-medium;
+}
+button[type]:hover {
+  @apply bg-slate-800 text-slate-100;
+}
+* {
+  @apply appearance-none outline-none;
+}
+*:focus {
+  @apply appearance-none outline-none;
+}
+*:disabled {
+  @apply grayscale cursor-not-allowed;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.ubuntu-mono {
+  font-family: "Ubuntu Mono", monospace;
+}

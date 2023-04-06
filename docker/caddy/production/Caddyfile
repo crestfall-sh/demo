@@ -1,0 +1,22 @@
+{
+  log {
+    format console
+  }
+}
+
+demo.crestfall.sh {
+  header {
+    Strict-Transport-Security "max-age=63072000"
+    defer
+  }
+  handle /authn/* {
+    uri strip_prefix /authn
+    reverse_proxy authn:8080
+  }
+  handle {
+    reverse_proxy demo:9090
+  }
+  tls joshxyzhimself@gmail.com {
+    protocols tls1.3
+  }
+}
