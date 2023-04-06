@@ -110,7 +110,7 @@ services:
       - ./docker/volumes/caddy/data:/data
       - ./docker/volumes/caddy/config:/config
       - ./docker/volumes/caddy/logs:/var/log/caddy/
-      - ./docker/caddy/development/Caddyfile:/etc/caddy/Caddyfile
+      - ./docker/caddy/production/Caddyfile:/etc/caddy/Caddyfile
     depends_on:
       - demo
     extra_hosts:
